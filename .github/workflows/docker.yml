@@ -34,6 +34,5 @@ jobs:
         env:
           IMAGE_TAG: ${{github.sha}}
         run: |
-          #BUILD DOCKER 
-          .buildImage.sh $IMAGE_TAG
-          .pushImage.sh $IMAGE_TAG
+          ./buildImage.sh $IMAGE_TAG
+          ./pushImage.sh $IMAGE_TAG
